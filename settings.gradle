@@ -7,5 +7,9 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Fake Application"
+
 include ':app'
-include ':network'
+include ':fake-api'
+include ':fake-repo'
+include ':core'
+include ':features:fake-feature'
