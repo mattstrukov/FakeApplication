@@ -76,6 +76,7 @@ class FakeFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
+        binding.posts.adapter = null
         _binding = null
     }
 
