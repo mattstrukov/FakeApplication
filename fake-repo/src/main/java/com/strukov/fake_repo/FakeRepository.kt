@@ -21,7 +21,7 @@ class FakeRepositoryImpl @Inject constructor(
 
             val response = api.getPosts()
 
-            if (!response.isSuccessful) {
+            if (response.isSuccessful) {
                 response.body() ?: listOf()
             } else {
                 throw Throwable(response.message())
